@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<%@ Register src="LeftMenuControl.ascx" tagname="LeftMenuControl" tagprefix="uc1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+        .auto-style2 {
+            height: 23px;
+            text-align: center;
+        }
+        .auto-style3 {
+            height: 23px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="width:100%;">
+            <tr>
+                <td class="auto-style2" colspan="3">HEADER CONTENT</td>
+            </tr>
+            <tr>
+                <td class="auto-style4">
+                    <uc1:LeftMenuControl ID="LeftMenuControl1" runat="server" />
+                </td>
+                <td class="auto-style1"></td>
+                <td class="auto-style1"></td>
+            </tr>
+            <tr>
+                <td class="auto-style3" colspan="3">
+                    <div class="gb_db" style="color: rgb(102, 102, 102); text-overflow: ellipsis; overflow: hidden; font-family: Roboto, RobotoDraft, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+                        pedrolanzinha95@gmail.com</div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+
+</html>
