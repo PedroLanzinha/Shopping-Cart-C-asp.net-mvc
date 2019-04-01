@@ -13,10 +13,11 @@ public class DataAccess
 {
     private static string myConnectionString;
 
-    public DataAccess()
+    static DataAccess()
     {
         myConnectionString = WebConfigurationManager.ConnectionStrings["myConnection"].ConnectionString;
     }
+
 
     public static DataTable selectQuery(string query)
     {
