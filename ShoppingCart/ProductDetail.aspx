@@ -18,13 +18,12 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:DataList ID="dlProduct" runat="server" RepeatColumns="1">
+    <asp:DataList ID="dlProduct" runat="server" RepeatColumns="1" >
         <ItemTemplate>
             <table class="auto-style10">
                 <tr>
                     <td class="auto-style6">
                         <asp:Image ID="Image1" runat="server" Height="158px" ImageUrl='<%# "Images/"+Eval("Image") %>' Width="100px" />
-                        <asp:Image runat="server" />
                         &nbsp;</td>
                     <td class="auto-style5"></td>
                 </tr>
@@ -49,7 +48,7 @@
                 <tr>
                     <td class="auto-style9">&nbsp;</td>
                     <td>
-                        <asp:Button ID="btnAddToCart" runat="server" Text="Add To Cart" />
+                        <asp:Button ID="btnAddToCart" runat="server" Text="Add To Cart" OnClick="btnAddToCart_Click" />
                     </td>
                 </tr>
             </table>

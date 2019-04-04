@@ -28,7 +28,7 @@ public class Cart
         return -1;
     }
 
-    public void Inser(CartItem item)
+    public void Insert(CartItem item)
     {
         int index = ItemIndexOf(item.ID);
         if(index == -1)
