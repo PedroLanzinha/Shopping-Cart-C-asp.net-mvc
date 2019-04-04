@@ -46,11 +46,11 @@ public class Cart
         Items.RemoveAt(rowID);
     }
 
-    public void Update(int RowID, int Quantity)
+    public void Update(int rowID, int Quantity)
     {
         if (Quantity > 0)
         {
-            Items[RowID].Quantity = Quantity;
+            Items[rowID].Quantity = Quantity;
         }
         else
         {
